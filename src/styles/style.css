@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: limegreen;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+.justDiv{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    padding: 10px;
+    font-size: larger;
+    border-top: 3px solid orangered;
+    border-bottom: 3px solid orange;
+    border-radius: 15px;
+    height: 50px;
+    text-transform: capitalize;
+}
