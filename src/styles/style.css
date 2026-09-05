@@ -1,5 +1,12 @@
 body{
     margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.justBiggerDiv{
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -8,7 +15,11 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h1{
+a{
+    text-decoration: none;
+}
+
+.justH1{
     text-align: center;
     color: limegreen;
     text-transform: uppercase;

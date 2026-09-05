@@ -1,0 +1,494 @@
+/* FOR THE MAIN CONTAINER */
+#mainContainer{
+    display: grid;
+    grid-template-columns: repeat(1, 0.3fr) repeat(1, 1fr);
+    gap: 15px;
+    padding: 20px;
+    color: #c9cfd5;
+    background-color: #04101e;
+}
+p, div{
+    margin: 0;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    background-color: #09131f;
+    border: 2px solid #1b2b3d;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* FOR THE MAIN LEFT CONTAINER */
+
+#mainLeftContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#fleetSetupDiv{
+    padding: 20px;
+    gap: 10px;
+    background-color: #0c1928;
+    border: 2px solid 1b2b3d;
+    border-radius: 10px;
+}
+
+#fleetSetupTitleSloganDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fleetSetupTitle{
+    color: #f8f9f9;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+#fleetSetupSlogan{
+    font-weight: bolder;
+}
+
+#fleetSetupGroupDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.startCoordinate{
+    outline: none;
+    text-align: center;
+    color: #c9cfd5;
+    width: 80px;
+    height: 30px;
+    background-color: #0f1d2c;
+    border-radius: 10px;
+    border: 2px solid #1b2b3d;
+}
+
+.direction{
+    outline: none;
+    text-align: center;
+    color: #c9cfd5;
+    width: 200px;
+    height: 30px;
+    background-color: #0f1d2c;
+    border-radius: 10px;
+    border: 2px solid #1b2b3d;
+}
+
+#fleetSetupSubmitButtonDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#fleetSetupSubmitButton{
+    width: 280px;
+    height: 45px;
+    color: #f8f9f9;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f5da2;
+}
+
+#actionDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #0c1928;
+    border: 2px solid #1b2b3d;
+    border-radius: 10px;
+}
+
+#actionTitle{
+    color: #f8f9f9;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+#actionStartGameButton{
+    width: 280px;
+    height: 45px;
+    color: #f8f9f9;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #247742;
+}
+#actionResetGameButton{
+    width: 280px;
+    height: 45px;
+    color: #f8f9f9;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: orangered;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR THE MAIN RIGHT CONTAINER */
+
+#mainRightContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #0f1d2c;
+    border: 2px solid #1b2b3d;
+    border-radius: 10px;
+}
+
+#battleshipHeaderDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#battleshipTitle{
+    font-size: 5em;
+    font-weight: bolder;
+    color: #f8f9f9;
+}
+
+#battleshipSlogan{
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+#humanComputerBoardDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#humanBoardDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #1b2b3d;
+    background-color: #09131f;
+}
+
+#humanBoardTitle{
+    font-weight: bolder;
+    color: #4186d4;
+}
+
+#humanBoardColumnLabelDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    /* border: 1px solid #28394c; */
+}
+
+#humanBoardColumnLabelDiv div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    /* border: 1px solid #28394c; */
+}
+
+/* #humanBoardRowLabelGridDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#humanBoardRowLabelDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #28394c;
+}
+
+#humanBoardRowLabelDiv div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #28394c;
+} */
+
+#computerBoardDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #1b2b3d;
+    background-color: #09131f;
+}
+
+#computerBoardTitle{
+    font-weight: bolder;
+    color: #e15b53;
+}
+
+#computerBoardColumnLabelDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    /* border: 1px solid #28394c; */
+}
+
+#computerBoardColumnLabelDiv div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    /* border: 1px solid #28394c; */
+}
+
+/* from javascript boardRenderer.js creatElement */
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30px;
+    /* border: 2px solid green */;
+}
+
+/* from javascript boardRenderer.js creatElement */
+.columnContainer{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #28394c;
+}
+
+/* .hitContainer{
+    background-color: red;
+    width: 100%;
+    height: 20px;
+    border: 2px solid yellow;
+} */
+
+#humanBoardGridContainer, #computerBoardGridContainer{
+    width: 420px;
+    /* background-color: aqua; */
+    /* border: 2px solid red; */
+}
+
+
+#gameStateStatusDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #1b2b3d;
+    background-color: #09131f;
+}
+
+#currentTurnStatusDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+#currentTurnTitle{
+    font-size: x-small;
+    color: #4186d4;
+}
+
+#currentTurnValue{
+    font-size: xx-large;
+    color: #f8f9f9;
+}
+
+#gameStatusDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+#gameStatusTitle{
+    font-size: x-small;
+    color: #c9cfd5;
+}
+
+#gameStatusValue{
+    font-size: x-large;
+    color: #3cb869;
+}
+
+#lastResultStatusDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+#lastResultTitle{
+    font-size: x-small;
+    color: #db707c;
+}
+
+#lastResultValue{
+    font-size: x-large;
+    color: #e15b53;
+}
+
+#hintInfoDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px 15px 40px;
+    border: 2px solid red;
+    border-radius: 10px;
+    border: 2px solid #1b2b3d;
+    background-color: #09131f;
+}
+
+/* #hintDiv{
+
+} */
+
+#howToPlayHeading{
+    color: orange;
+}
+
+#infoDiv{
+    padding: 10px;
+    background-color: #0f1d2c;
+    border-radius: 10px;
+    border: 2px solid #1b2b3d;
+    width: 300px;
+}
+
+#infoHeading{
+    color: orange;
+}

@@ -1,3 +1,6 @@
+import { domManagerModule } from "./dom/domManager.js";
 import "./styles/style.css";
+import "./styles/battleship.css";
 
-console.log("FOR THE LOVE OF BATTLESHIP PROJECT...!!!");
+//script.js (ENTRY POINT)
+domManagerModule.initializeGame();

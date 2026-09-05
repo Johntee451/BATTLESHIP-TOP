@@ -18,6 +18,10 @@ export default {
     new HtmlWebpackPlugin({
       template: "./src/templates/template.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/templates/battleship.html",
+      filename: "battleship.html",
+    }),
   ],
   module: {
     rules: [

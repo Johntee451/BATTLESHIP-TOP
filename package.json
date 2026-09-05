@@ -24,5 +24,6 @@
     "webpack": "^5.109.2",
     "webpack-cli": "^7.2.2",
     "webpack-dev-server": "^6.0.0"
-  }
+  },
+  "type": "module"
 }

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship | Destroy Enemy Ship</title>
+</head>
+<body>
+    <div id="mainContainer">
+
+        <!-- THE LEFT MAIN CONTAINER DIV -->
+        <div id="mainLeftContainer">
+            <div id="fleetSetupDiv" hidden> <!-- hidden -->
+                <div id="fleetSetupTitleSloganDiv">
+                    <p id="fleetSetupTitle">SETUP YOUR FLEET</p>
+                    <p id="fleetSetupSlogan">Place your ships on the grid.</p>
+                </div>
+                <br>
+                <div id="fleetSetupGroupDiv">
+                    <div id="carrierSetupDiv">
+                        <fieldset>
+                            <legend>carrier</legend>
+                            <label>Start coordinate:</label>
+                            <div>
+                                <input type="number" class="startCoordinate" id="carrierRowInput" placeholder="Row" min="0" max="9">
+                                <input type="number" class="startCoordinate" id="carrierColumnInput" placeholder="Column" min="0" max="9">
+                            </div>
+                            <br>
+                            <label>Direction:</label>
+                            <select class="direction" id="carrierDirectionInput">
+                                <option value="horizontal">horizontal</option>
+                                <option value="vertical">vertical</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div id="battleshipSetupDiv">
+                        <fieldset>
+                            <legend>battleship</legend>
+                            <label>Start coordinate:</label>
+                            <div>
+                                <input type="number" class="startCoordinate" id="battleshipRowInput" placeholder="Row" min="0" max="9">
+                                <input type="number" class="startCoordinate" id="battleshipColumnInput" placeholder="Column" min="0" max="9">
+                            </div>
+                            <br>
+                            <label>Direction:</label>
+                            <select class="direction" id="battleshipDirectionInput">
+                                <option value="horizontal">horizontal</option>
+                                <option value="vertical">vertical</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div id="submarineSetupDiv">
+                        <fieldset>
+                            <legend>submarine</legend>
+                            <label>Start coordinate:</label>
+                            <div>
+                                <input type="number" class="startCoordinate" id="submarineRowInput" placeholder="Row" min="0" max="9">
+                                <input type="number" class="startCoordinate" id="submarineColumnInput" placeholder="Column" min="0" max="9">
+                            </div>
+                            <br>
+                            <label>Direction:</label>
+                            <select class="direction" id="submarineDirectionInput">
+                                <option value="horizontal">horizontal</option>
+                                <option value="vertical">vertical</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div id="cruiserSetupDiv">
+                        <fieldset>
+                            <legend>cruiser</legend>
+                            <label>Start coordinate:</label>
+                            <div>
+                                <input type="number" class="startCoordinate" id="cruiserRowInput" placeholder="Row" min="0" max="9">
+                                <input type="number" class="startCoordinate" id="cruiserColumnInput" placeholder="Column" min="0" max="9">
+                            </div>
+                            <br>
+                            <label>Direction:</label>
+                            <select class="direction" id="cruiserDirectionInput">
+                                <option value="horizontal">horizontal</option>
+                                <option value="vertical">vertical</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div id="destroyerSetupDiv">
+                        <fieldset>
+                            <legend>destroyer</legend>
+                            <label>Start coordinate:</label>
+                            <div>
+                                <input type="number" class="startCoordinate" id="destroyerRowInput" placeholder="Row" min="0" max="9">
+                                <input type="number" class="startCoordinate" id="destroyerColumnInput" placeholder="Column" min="0" max="9">
+                            </div>
+                            <br>
+                            <label>Direction:</label>
+                            <select class="direction" id="destroyerDirectionInput">
+                                <option value="horizontal">horizontal</option>
+                                <option value="vertical">vertical</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="fleetSetupSubmitButtonDiv">
+                    <button type="submit" id="fleetSetupSubmitButton">PLACE FLEET</button>
+                </div>
+            </div>
+            <div id="actionDiv">
+                <div id="actionTitle">ACTIONS</div>
+                <br>
+                <div>
+                    <div id="actionStartGameButtonDiv">
+                        <button type="submit" id="actionStartGameButton">START GAME</button>
+                    </div>
+                    <br>
+                    <div id="actionResetGameButtonDiv">
+                        <button type="submit" id="actionResetGameButton">RESET GAME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- THE RIGHT MAIN CONTAINER DIV -->
+        <div id="mainRightContainer">
+            <div id="battleshipHeaderDiv">
+                <p id="battleshipTitle">BATTLESHIP</p>
+                <p id="battleshipSlogan">Sink all enemy ships to win!</p>
+            </div>
+            <div id="humanComputerBoardDiv">
+                <div id="humanBoardDiv">
+                    <div id="humanBoardTitle">YOUR BOARD</div>
+                    <br>
+                    <div id="humanBoardColumnLabelDiv">
+                        <div>0</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <div id="humanBoardRowLabelGridDiv">
+                        <div id="humanBoardRowLabelDiv"></div>
+                        <div id="humanBoardGridContainer"></div>
+                    </div>
+                </div>
+                <div id="computerBoardDiv">
+                    <div id="computerBoardTitle">ENEMY BOARD</div>
+                    <br>
+                    <div id="computerBoardColumnLabelDiv">
+                        <div>0</div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                    </div>
+                    <div id="computerBoardRowLabelGridDiv">
+                        <div id="computerBoardRowLabelDiv"></div>
+                        <div id="computerBoardGridContainer"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="gameStateStatusDiv">
+                <div id="currentTurnStatusDiv">
+                    <p id="currentTurnTitle">CURRENT TURN</p>
+                    <br>
+                    <p id="currentTurnValue"><!-- Your Turn --></p>
+                </div>
+                <div id="gameStatusDiv">
+                    <p id="gameStatusTitle">GAME STATUS</p>
+                    <br>
+                    <p id="gameStatusValue"><!-- Game in Progress --></p>
+                </div>
+                <div id="lastResultStatusDiv">
+                    <p id="lastResultTitle">LAST RESULT</p>
+                    <br>
+                    <p id="lastResultValue"><!-- Hit! --></p>
+                </div>
+            </div>
+            <div id="hintInfoDiv">
+                <div id="hintDiv">
+                    <p id="howToPlayHeading"><b>HOW TO PLAY:</b></p>
+                    <div id="howToPlayStepDiv">
+                        <ol>
+                            <li>Place all your ships on the board.</li>
+                            <li>Click on the enermy board to attack</li>
+                            <li>Red "X" = Hit, White "O" = Miss</li>
+                            <li>Sink all enemy ships to win!</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="infoDiv">
+                    <p id="infoHeading"><b>SYMBOLS:</b></p>
+                    <div id="infoList">
+                        <ul>
+                            <li>Your Ship</li>
+                            <li>hit!</li>
+                            <li>Miss!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
