@@ -20,6 +20,23 @@ fieldset{
     border: 2px solid #1b2b3d;
     border-radius: 10px;
 }
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+}
+ul li div{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
 
 
 
@@ -491,4 +508,16 @@ fieldset{
 
 #infoHeading{
     color: orange;
+}
+
+#yourShip{
+    background-color: blue;
+}
+
+#yourHit{
+    background-color: green;
+}
+
+#yourMiss{
+    background-color: grey;
 }
